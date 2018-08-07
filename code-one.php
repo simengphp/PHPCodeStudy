@@ -15,11 +15,11 @@
 目录结构：在你源码的tests里面，然后在源码的最外层有一个run-tests.php，
 这个是总的测试文件，然后进入到tests文件夹里面，会有很多的测试用例
 for example
---TEST--  <这个是必填项，表示测试用例的具体的名称>
+--TEST--  《这个是必填项，表示测试用例的具体的名称》
 Trivial "Hello World" test
---FILE-- <必填项，测试用户的核心代码，开始标志>
+--FILE-- 《必填项，测试用户的核心代码，开始标志》
 <?php echo "Hello World"?>
---EXPECT--<必填项，期望得到值的标志>
+--EXPECT--《必填项，期望得到值的标志》
 Hello World
 ● win32 这个目录主要包括Windows平台相关的一些实现，比如sokcet的实现在Windows下和*Nix平台就不太一样，同时也包括了Windows下编译PHP相关的脚本。
 

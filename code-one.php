@@ -12,8 +12,19 @@
 <br>● sapi 包含了各种服务器抽象层的代码，例如apache的mod_php，cgi，fastcgi以及fpm等等接口。
 <br>● TSRM PHP的线程安全是构建在TSRM库之上的，PHP实现中常见的*G宏通常是对TSRM的封装，TSRM(Thread Safe Resource Manager)线程安全资源管理器。
 <br>● tests PHP的测试脚本集合，包含PHP各项功能的测试文件
+<br>目录结构：在你源码的tests里面，然后在源码的最外层有一个run-tests.php，
+这个是总的测试文件，然后进入到tests文件夹里面，会有很多的测试用例
+<br>
+for example
+<br>
+--TEST--  <这个是必填项，表示测试用例的具体的名称>
+Trivial "Hello World" test
+--FILE-- <必填项，测试用户的核心代码，开始标志>
+<?php echo "Hello World"?>
+--EXPECT--<必填项，期望得到值的标志>
+Hello World
 <br>● win32 这个目录主要包括Windows平台相关的一些实现，比如sokcet的实现在Windows下和*Nix平台就不太一样，同时也包括了Windows下编译PHP相关的脚本。
-4、
+
 
 
 

@@ -1,0 +1,5 @@
+1、PHP早初始化过程中调用php.ini，里面有一个php_disable_function和php_disable_classes，分别用于
+禁用php的函数和禁用php某些类，当然初始化状态下是空的状态
+
+2、PHP文件编译执行的时候会执行了一个前置文件和当前文件以及后置文件，前置文件和后置文件在php.ini里面
+进行设置，参数名为auto_prepend_file和auto_append_file，如果不设置将是禁止使用

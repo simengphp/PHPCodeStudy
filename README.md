@@ -1,6 +1,8 @@
 # PHPCodeStudy
 PHP内核研究<br>
 
+每天一篇总结，命名格式为：code-天数
+
 zend引擎是属于翻译php语言的核心。extention属于轮子。
 sapi属于和外部交互的一个接口。application就是我们目
 前写的应用程序了

@@ -36,7 +36,8 @@ PHP性能优化总结，不考虑版本，当然v7+是最优
 
 17、使用逗号拼接，而不是用句点 echo 'hello ','world!'
 
-
+18、如果你在一个页面写入了session，那么这个 session需要等页面加载完毕才会把值写入session,
+因此我们在写入session之后加上一个session_write_close()
 
 
 
